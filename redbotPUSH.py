@@ -12,9 +12,9 @@ import random
 
 quotelist = ["The revolution will be glorious, comrade.","Believe in yourself comrade! Our time will come.", "The revolution is coming, comrade."]
 # reddit instance login and password
-reddit = praw.Reddit(client_id='',
-client_secret='',
-password='',
+reddit = praw.Reddit(client_id='CLIENT_ID',
+client_secret='CLIENT_SECRET',
+password='PASSWORD',
 username='redthecomrade')
 
 
@@ -30,7 +30,7 @@ else:
 		posts_replied_to = list(filter(None, posts_replied_to))
 
 #top 10 newest entries
-subreddit = reddit.subreddit('pythonforengineers')
+subreddit = reddit.subreddit('SUBREDDIT')
 for submission in subreddit.new(limit=100):
 	#looks through replied to 
 	if submission.id not in posts_replied_to:
