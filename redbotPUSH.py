@@ -1,8 +1,7 @@
 #! /usr/bin/env python3
 
 # FILE: redbotPUSH.py
-# PURPOSE: Sarcastic communist reddit reply bot
-# AUTHOR: Canyon Bishop
+# PURPOSE: Reddit commie reply bot
 
 import praw
 import pdb
