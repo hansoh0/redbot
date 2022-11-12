@@ -43,5 +43,5 @@ def __main__():
 	with open("posts_replied_to.txt", "w") as f:
 		for post_id in posts_replied_to:
 			f.write(post_id + "\n")
-if __name__=="__main__"():
+if __name__=="__main__":
 	__main__()
